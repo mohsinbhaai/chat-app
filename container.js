@@ -6,14 +6,7 @@ const container = dependable.container();
 const simpleDependecies = [
     ['_', 'lodash'],
     ['mongoose', 'mongoose'],
-    ['passport', 'passport'],
-    ['formidable', 'formidable'],
-    ['async', 'async'],
-    ['Club', './models/clubs'],
-    ['Users', './models/user'],
-    ['Message', './models/message'],
-    ['Group', './models/groupmessage'],
-    ['aws', './helpers/AWSUpload']
+    ['passport', 'passport']
 ];
 
 simpleDependecies.forEach(function(val){
@@ -30,18 +23,3 @@ container.register('container', function(){
 });
 
 module.exports = container;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
